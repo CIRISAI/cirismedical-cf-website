@@ -88,7 +88,7 @@ export const FloatingNav = ({
           </Link>
         ))}
         <Link
-          href={"#"}
+          href={"https://github.com/CIRISAI"}
           className={
             "text-brand-primary fill-brand-primary flex items-center space-x-1 rounded-full border-2 px-4 py-1 text-sm hover:fill-black hover:text-black dark:text-neutral-50"
           }

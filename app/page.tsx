@@ -82,10 +82,10 @@ export default function Homepage() {
         mediaType="video"
         opacityValue={0.5}
         mediaSrc="/videos/video3.mp4"
-        buttonText="Get Started"
-        buttonHref="/get-started"
-        linkText="Learn More"
-        linkHref="/about-us"
+        buttonText="Get the Code"
+        buttonHref="https://github.com/CIRISAI"
+        linkText="The Covenant "
+        linkHref="https://ciris-covenant.alignordie.workers.dev/"
       />
       <div className="container min-h-screen max-w-7xl" ref={containerRef}>
         <Cursor
@@ -112,8 +112,8 @@ export default function Homepage() {
           </>
         </Cursor>
         <FlexSection
-          buttonHref=" "
-          buttonText="About CIRIS"
+          // buttonHref=" "
+          // buttonText="About CIRIS"
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
           headline="What is CIRIS"
@@ -248,8 +248,8 @@ export default function Homepage() {
         />
         <div className="mb-8"></div>
         <FlexSection
-          buttonHref="ddsfgsdf"
-          buttonText="Click me"
+          // buttonHref="ddsfgsdf"
+          // buttonText="Click me"
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
           headline="Recursive Ethical Evaluation "
@@ -262,7 +262,7 @@ export default function Homepage() {
           headline="Governance and Oversight"
           subheadline="CIRIS includes built-in operational governance mechanisms to sustain ethical integrity"
         />
-        <ImageHeroBlock
+        {/* <ImageHeroBlock
           className="text-brand-primary fill-brand-primary mb-8"
           backgroundImageSrc="/kelly-vohs-soSTXmIxTDU-unsplash.jpg"
           buttonHref="ddsfgsdf"
@@ -274,7 +274,7 @@ export default function Homepage() {
           subheadline="AI based system design"
           copyText="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
            ut labore et dolore magna aliqua."
-        />
+        /> */}
         <CardsSection
           cardsData={[
             {

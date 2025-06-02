@@ -122,7 +122,7 @@ export default function Example() {
             </p>
             <div className="flex gap-x-6"></div>
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+          {/* <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="border-b-brand-primary border-b pb-4 text-sm/6 font-semibold">
@@ -183,7 +183,7 @@ export default function Example() {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="mt-16 flex justify-center gap-8 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-sm/6">&copy; 2025 CIRIS.AI All rights reserved.</p>
