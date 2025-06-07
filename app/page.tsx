@@ -78,7 +78,7 @@ export default function Homepage() {
       <HomeHeader
         headline="Ethical AI."
         subheadline="A comprehensive, free and robust way to employ Ethics in AI"
-        description="CIRIS.ai balances autonomous AI decision-making with meaningful human oversight, delivering resilient, transparent ethical intelligence for critical systems."
+        description="A comprehensive, open-source governance framework that embeds ethical reasoning into the core of autonomous AI systems—ensuring they remain aligned with human flourishing as they scale."
         mediaType="video"
         opacityValue={0.5}
         mediaSrc="/videos/video3.mp4"
