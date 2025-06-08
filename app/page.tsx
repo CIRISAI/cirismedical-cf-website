@@ -118,15 +118,14 @@ export default function Homepage() {
           logoAlt="Brand logo icon"
           headline="What is CIRIS"
           subheadline="A governance framework for responsible AI"
-          copyText="CIRIS (Core Identity, Integrity, Resilience, Incompleteness Awareness, and Sustained Coherence) is a comprehensive framework that attempts to guide AI systems toward ethical behavior through structured decision-making and meaningful human oversight.
-          Unlike simple ethics checklists, CIRIS works with your existing AI models—adding a layer of principled reasoning that recognizes when human wisdom is needed. It's designed to be thorough enough for researchers yet practical enough for real-world deployment."
+          copyText={`CIRIS (Core Identity, Integrity, Resilience, Incompleteness Awareness, and Sustained Coherence) is a comprehensive framework that attempts to guide AI systems toward ethical behavior through structured decision-making and meaningful human oversight.<br /><br /> Unlike simple ethics checklists, CIRIS works with your existing AI models—adding a layer of principled reasoning that recognizes when human wisdom is needed. It's designed to be thorough enough for researchers yet practical enough for real-world deployment.`}
         />
         <SeparatorTitleBlock
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
           headline="How CIRIS Works"
-          subheadline="At the heart of CIRIS is the Principled Decision-Making Algorithm (PDMA), which guides AI actions through structured ethical evaluation. When facing uncertainty or high-stakes decisions, systems use Wisdom-Based Deferral (WBD) to escalate to designated human authorities.
-          CIRIS attempts to maintain ethical alignment through continuous monitoring, transparent reasoning, and the crucial recognition that AI systems have limits requiring human judgment."
+          subheadline={`At the heart of CIRIS is the Principled Decision-Making Algorithm (PDMA), which guides AI actions through structured ethical evaluation. When facing uncertainty or high-stakes decisions, systems use Wisdom-Based Deferral (WBD) to escalate to designated human authorities.<br /><br />
+          CIRIS attempts to maintain ethical alignment through continuous monitoring, transparent reasoning, and the crucial recognition that AI systems have limits requiring human judgment.`}
           className="border-brand-primary text-brand-primary border-t border-b"
         />
         <ImageHeroBlockLeftBottom
@@ -255,8 +254,8 @@ export default function Homepage() {
           logoAlt="Brand logo icon"
           headline="Continuous Ethical Review"
           subheadline="PDMA-driven decision validation"
-          copyText="Decisions in CIRIS aren't one-time checks—they undergo ongoing evaluation cycles. When the system generates insights or takes actions, these outcomes enter a review queue where they're rigorously assessed through the PDMA process.
-          This recursive approach attempts to maintain ethical alignment over time, helping catch potential issues before they compound and ensuring transparency in the system's reasoning process."
+          copyText={`Decisions in CIRIS aren't one-time checks—they undergo ongoing evaluation cycles. When the system generates insights or takes actions, these outcomes enter a review queue where they're rigorously assessed through the PDMA process.<br /><br />
+          This recursive approach attempts to maintain ethical alignment over time, helping catch potential issues before they compound and ensuring transparency in the system's reasoning process.`}
         />
         <AccordionSection
           logoSrc="logoIcon"
@@ -315,10 +314,10 @@ export default function Homepage() {
           buttonText="Get in Touch"
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
-          headline="Building AI for Human Flourishing"
+          headline="Built for Human Flourishing"
           subheadline="Ethics as foundation, not afterthought"
-          copyText="CIRIS is designed for a future where AI systems become increasingly autonomous and capable. By embedding ethical reasoning at the core—not as a superficial layer—we attempt to create AI that remains aligned with human values even as it scales beyond constant human oversight.
-          This represents an effort to build a new type of AI that is complete, open, self-verifiable, won't go feral or sell you ads or prioritize a corporation, ever."
+          copyText={`CIRIS is designed for a future where AI systems become increasingly autonomous and capable. By embedding ethical reasoning at the core—not as a superficial layer—we attempt to create AI that remains aligned with human values even as it scales beyond constant human oversight.<br /><br />
+          This represents an effort to build a new type of AI that is complete, open, self-verifiable, won't go feral or sell you ads or prioritize a corporation, ever.`}
         />{" "}
         <NewsletterForm />
         <Footer />
