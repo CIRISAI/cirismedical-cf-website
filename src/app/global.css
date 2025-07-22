@@ -4,7 +4,8 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #000000;
+  --foreground: #3b21a8;
+  --color-fd-foreground: #3b21a8;
 }
 
 @theme inline {
@@ -16,29 +17,49 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: var(--font-sans);
   font-feature-settings: "ss04" 1, "ss02" 1, "ss08" 1;
 }
+
 .text-9xl {
   font-weight: 500;
   letter-spacing: -0.34rem;
   font-kerning: auto;
   font-feature-settings: "ss04" 1, "ss02" 1, "ss08" 1;
 }
+
 .p-bold {
   font-weight: 850;
   letter-spacing: -0.02rem;
 }
+
 @theme {
   --color-brand-primary: #7b70ff;
-
   --color-ciris-purple: #7b70ff;
   --color-ciris-yellow: #ffe480;
   --color-ciris-blue: #81eeff;
   --color-ciris-green: #28ffb4;
   --color-ciris-vlback: #f0ecff;
+  --color-fd-card: var(--color-ciris-vlback);
+  --color-fd-secondary: #edeeff;
+  --color-fd-primary: #1a0764;
+  --color-fd-accent: #dbd6ef;
+  --color-fd-muted-foreground: #7b70ff;
+  --tw-prose-body: #3e3e3e;
+}
+
+.prose {
+  color: #3e3e3e;
+  --tw-prose-headings: #3b21a8;
+}
+
+.prose a {
+  color: #3b21a8;
+}
+
+.dark .prose {
+  color: #b8b8b8;
+  --tw-prose-headings: #ffffff;
 }
 
 @utility container {
@@ -48,11 +69,16 @@ body {
 @utility h0 {
   @apply text-4xl leading-tight;
 }
+
+/* .bg-fd-card {
+  @apply bg-ciris-vlback/40
+} */
+
 h4 {
   @apply text-lg leading-tight;
 }
 
-@media (width >= 96rem) {
+@media (width >=96rem) {
   .container {
     max-width: 96rem;
   }
