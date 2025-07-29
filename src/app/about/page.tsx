@@ -114,7 +114,7 @@ export default function Homepage() {
           animateNumberValue={3}
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
-          headline="Board Memebers"
+          headline="Board Members"
           subheadline="Coming from different disciplines - but are united by the belief that intelligence must serve flourishing. Together, we build systems that listen, adapt, and care."
         />
         <CardsSectionImage
@@ -164,7 +164,7 @@ export default function Homepage() {
             Founder & CEO of CIRIS.io
           </p>
           <p className="mt-2 text-gray-600">
-           Eric is the founder of CIRIS.AI. Driven b y passion and a strong moral compass he decided to turn his heart to CIRIS as an opensource project. For everyone to use.
+           Eric is the founder of CIRIS.AI. Driven by passion and a strong moral compass he decided to turn his heart to CIRIS as an opensource project. For everyone to use.
           </p>
           </div>
         </div>
