@@ -19,7 +19,7 @@ function CardImage({ headline, copyText, subheadline,imageUrl, logoSrc, logoAlt,
       <div className="bg-ciris-vlback/40 flex h-full flex-col p-8 transition-shadow duration-300 md:p-20 dark:bg-gray-800">
  
         <><Image
-          src={imageUrl}
+          src={imageUrl ?? "/board2.png"}
           alt={headline}
           width={500}
           height={300}
