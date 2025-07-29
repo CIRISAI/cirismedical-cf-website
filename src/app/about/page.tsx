@@ -130,7 +130,7 @@ export default function Homepage() {
             {
               headline: "Kelsey",
               subheadline: "Systems Ethicist",
-              imageUrl: "/board2.png",
+              imageUrl: "/board2.jpg",
               copyText:
                 "Philosophy nerd. Forest-trained systems thinker. Kelsey brings both structure and soul to CIRIS, grounding abstract ethics in real-world complexity. With a background in natural resources and a love for big questions, she helps keep our vision focused on what’s just over the horizon - while never losing sight of the human (and non-human) systems at stake."
             },
