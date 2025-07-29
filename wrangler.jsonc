@@ -1,0 +1,7 @@
+{
+  "name": "ciris-website",
+  "compatibility_date": "2025-07-22",
+  "assets": {
+    "directory": "./out"
+  }
+}
