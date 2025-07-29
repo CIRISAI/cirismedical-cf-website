@@ -8,7 +8,7 @@ import RotatingLogo from "./ui/floating/RotatingLogo";
 interface HomeHeaderProps {
   headline: string;
   subheadline?: string;
-  description: string;
+  description?: string;
   mediaType: "video" | "image";
   mediaSrc: string;
   opacityValue: number;
