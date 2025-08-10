@@ -83,7 +83,7 @@ export default function Homepage() {
         opacityValue={0.5}
         mediaSrc="/videos/video3.mp4"
         buttonText="Get the Code"
-        buttonHref="https://github.com/CIRISAI"
+        buttonHref="https://github.com/CIRISAI/CIRISAgent"
         linkText="The Covenant "
         linkHref="/sections/main"
       />
