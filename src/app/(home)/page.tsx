@@ -76,16 +76,16 @@ export default function Homepage() {
     <>
       <FloatingNav navItems={navItems} />
       <HomeHeader
-        headline="Ethical AI."
-        subheadline="A comprehensive, free and robust way to employ Ethics in AI"
-        description="CIRIS.ai balances autonomous AI decision-making with meaningful human oversight, delivering resilient, transparent ethical intelligence for critical systems."
+        headline="Healthcare for Humanity."
+        subheadline="Bringing physician-supervised AI healthcare to 3.5 billion underserved people"
+        description="Every 4 seconds, someone dies from lack of basic healthcare. CIRISMedical bridges this gap with ethical AI, working alongside local healers and global physicians to deliver care where it's needed most."
         mediaType="video"
         opacityValue={0.5}
         mediaSrc="/videos/video3.mp4"
-        buttonText="Get the Code"
-        buttonHref="https://github.com/CIRISAI/CIRISAgent"
-        linkText="The Covenant "
-        linkHref="/sections/main"
+        buttonText="Join Our Mission"
+        buttonHref="#partnership"
+        linkText="Safety First "
+        linkHref="/safety"
       />
       <div className="container min-h-screen max-w-7xl" ref={containerRef}>
         <Cursor
@@ -116,54 +116,54 @@ export default function Homepage() {
           // buttonText="About CIRIS"
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
-          headline="What is CIRIS"
-          subheadline="An ethical Framework for the rest of us."
-          copyText="CIRIS (Core Identity, Integrity, Resilience, Incompleteness Awareness, and Signalling Gratitude / Sustained Coherence) is an advanced ethical governance framework for autonomous AI systems. It ensures that AI operates with clear ethical coherence, principled transparency, and meaningful human oversight."
+          headline="The Silent Crisis"
+          subheadline="Half the world lacks access to essential health services."
+          copyText="In rural Pakistan, a mother walks 20 kilometers to the nearest clinic. In sub-Saharan Africa, a child dies from malaria every minute. In refugee camps, millions suffer without basic care. CIRISMedical exists because healthcare is a human right, not a privilege of geography or wealth."
         />
         <SeparatorTitleBlock
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
-          headline="How CIRIS Works"
-          subheadline="Ethical Governance Through Recursive Decision-Making"
-          copyText="At the heart of CIRIS is the Hyper3 Ethical Recursive Engine (H3ERE), which employs a 3×3×3 ethical reasoning structure:"
+          headline="Why Now"
+          subheadline="AI can finally help where doctors cannot reach"
+          copyText="With advances in medical AI and global connectivity, we can now provide expert medical guidance to any smartphone. CIRISMedical transforms a simple phone into a bridge to life-saving care."
           className="border-brand-primary text-brand-primary border-t border-b"
         />
         <ImageHeroBlockLeftBottom
           backgroundImageSrc="/overview.svg"
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
-          headline="An overview of CIRIS"
-          subheadline="CIRIS is a comprehensive ethical framework for AI systems"
-          copyText="CIRIS employs a 3x3x3 structure for ethical decision-making, ensuring that every action is guided by core principles, contextual knowledge, and behavioral handlers. This recursive approach guarantees that AI systems maintain ethical integrity, transparency, and resilience in their operations."
+          headline="Our Approach"
+          subheadline="Ethical AI working with human healers"
+          copyText="CIRISMedical never replaces doctors - it extends their reach. Local community health workers use our AI for triage and basic diagnostics. Traditional healers integrate modern medical knowledge with cultural practices. Remote physicians supervise all decisions. Together, we create a healthcare network that honors both tradition and science."
         />
         <SeparatorTitleBlock
           animateNumber={true}
           animateNumberValue={3}
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
-          headline="Decision-Making Algorithms"
-          subheadline="DMAs collectively ensure robust, multi-dimensional ethical validation."
+          headline="Core Services"
+          subheadline="Three pillars of AI-assisted healthcare"
         />
         <CardsSection
           cardsData={[
             {
-              headline: "Principled DMA (PDMA)",
+              headline: "Emergency Triage",
               copyText:
-                "Ensures all decisions align strictly with core ethical principles, including beneficence, non-maleficence, integrity, transparency, autonomy, and justice.",
+                "Using ESI protocols, our AI helps community workers quickly identify critical cases, ensuring those who need immediate care get it first. Every second counts when lives are at stake.",
               logoSrc: "logoIcon",
               logoAlt: "Brand logo icon",
             },
             {
-              headline: "Secure & Reliable",
+              headline: "Diagnostic Support",
               copyText:
-                "Built with security at its core, ensuring your∫ data and applications are protected with enterprise-grade encryption.",
+                "From analyzing symptoms to interpreting basic tests, our AI provides diagnostic assistance that helps local healers make informed decisions, always under physician supervision.",
               logoSrc: "logoIcon",
               logoAlt: "Brand logo icon",
             },
             {
-              headline: "Easy Integration",
+              headline: "Treatment Guidance",
               copyText:
-                "Seamlessly integrate with your existing workflow and tools. Get started in minutes, not hours.",
+                "Access to current medical protocols, drug interactions, and treatment plans - bringing the world's medical knowledge to the most remote locations.",
               logoSrc: "logoIcon",
               logoAlt: "Brand logo icon",
             },
@@ -174,31 +174,31 @@ export default function Homepage() {
           logoAlt="Brand logo icon"
           animateNumber={true}
           animateNumberValue={3}
-          headline="Contextual Knowledge Graphs"
-          subheadline="Environmental, Core Identity, and Task-Specific"
-          copyText="CIRIS employs three distinct Contextual Knowledge Graphs (CKGs) to ensure that ethical decisions are informed, relevant, and aligned with the agent's operational context."
+          headline="Cultural Integration"
+          subheadline="Respecting local wisdom while providing modern care"
+          copyText="Healthcare isn't just medicine - it's trust, culture, and community. CIRISMedical works with traditional healers, respects local practices, and adapts to cultural contexts while ensuring medical safety."
         />
         <CardsSection
           cardsData={[
             {
-              headline: "Core Identity Graph",
+              headline: "Local Healers",
               copyText:
-                "Ensures all decisions align strictly with core ethical principles, including beneficence, non-maleficence, integrity, transparency, autonomy, and justice.",
+                "We partner with traditional medicine practitioners, shamans, and herbalists - respecting their deep community trust while enhancing their capabilities with medical AI.",
               logoSrc: "logoIcon",
               logoAlt: "Brand logo icon",
             },
             {
-              headline: "Environmental Graph",
+              headline: "Community Workers",
 
               copyText:
-                "Provides a robust, common-sense model of the external world, enabling consistent and understandable interactions.  ",
+                "Training local health workers to use AI tools effectively, creating sustainable healthcare infrastructure that remains in the community long after deployment.",
               logoSrc: "logoIcon",
               logoAlt: "Brand logo icon",
             },
             {
-              headline: "Task-Specific Graph",
+              headline: "Global Physicians",
               copyText:
-                "Contains detailed, mission-specific context, ensuring informed, relevant decision-making tailored precisely to the agent’s operational objectives.",
+                "Volunteer doctors from around the world provide supervision and expertise, ensuring every AI recommendation meets the highest medical standards.",
               logoSrc: "logoIcon",
               logoAlt: "Brand logo icon",
             },
@@ -209,9 +209,9 @@ export default function Homepage() {
           logoAlt="Brand logo icon"
           animateNumber={true}
           animateNumberValue={3}
-          headline="Core Behavioral Handlers"
-          subheadline="CIRIS employs three core behavioral handlers to manage ethical decision-making and operational coherence."
-          copyText="These handlers ensure that the agent can act, remember, and defer decisions in a manner that maintains ethical integrity and operational efficiency."
+          headline="Safety Architecture"
+          subheadline="Three layers of protection for every medical decision"
+          copyText="Patient safety is paramount. Every decision passes through multiple safety checks, ensuring no harm while delivering life-saving care."
         />
         <Image
           alt="decoration static image"
@@ -223,24 +223,24 @@ export default function Homepage() {
         <CardsSection
           cardsData={[
             {
-              headline: "Action Handler",
+              headline: "AI Safety Layer",
               copyText:
-                "Executes ethically approved actions. Can Speak (communicate decisions), Act (implement direct actions), or Listen (monitor and intake new information).",
+                "Medical AI trained on millions of cases, validated by physicians, and constantly updated with the latest medical knowledge. Never makes autonomous decisions.",
               logoSrc: "logoIcon",
               logoAlt: "Brand logo icon",
             },
             {
-              headline: "Memory Handler",
+              headline: "Human Oversight",
 
               copyText:
-                "Manages ethical coherence by deciding when to Memorize (store important ethical reasoning and context), Remember (recall past decisions), or Forget (discard outdated or irrelevant information).",
+                "Every high-risk decision requires physician approval. Local health workers provide context. No critical action happens without human verification.",
               logoSrc: "logoIcon",
               logoAlt: "Brand logo icon",
             },
             {
-              headline: "Deferral Handler",
+              headline: "Ethical Governance",
               copyText:
-                "Manages uncertainty or high-stakes decisions by choosing to Ignore (continue without action), Ponder (revisit in subsequent cycles), or Defer/Reject (escalate the decision to human wisdom or reject it outright).",
+                "Built on CIRIS principles - decisions must be beneficial, transparent, and just. The AI will refuse harmful actions and defer uncertain cases to humans.",
               logoSrc: "logoIcon",
               logoAlt: "Brand logo icon",
             },
@@ -252,15 +252,15 @@ export default function Homepage() {
           // buttonText="Click me"
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
-          headline="Recursive Ethical Evaluation "
-          subheadline="PDMA Engine"
-          copyText="Decisions made by the CIRIS agent aren't simply one-off ethical checks—they undergo continuous recursive evaluation. When the system generates a 'thought' (a decision or insight from a prior action), this thought enters a queue. Each thought is rigorously assessed through the three DMAs. The results from these DMAs are synthesized in a final recursive PDMA review, ensuring every decision maintains ethical alignment, coherence, and transparency."
+          headline="The Technology"
+          subheadline="Domain-routed Medical AI"
+          copyText="CIRISMedical uses advanced language models specifically trained on medical data, routed through domain-aware systems that ensure medical queries get medical-specific responses. With just one line of custom code, we've created a complete medical AI system that maintains perfect separation from general AI - ensuring safety, compliance, and specialization."
         />
         <AccordionSection
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
-          headline="Governance and Oversight"
-          subheadline="CIRIS includes built-in operational governance mechanisms to sustain ethical integrity"
+          headline="Partnership Opportunities"
+          subheadline="Join us in democratizing healthcare access worldwide"
         />
         {/* <ImageHeroBlock
           className="text-brand-primary fill-brand-primary mb-8"
@@ -278,23 +278,23 @@ export default function Homepage() {
         <CardsSection
           cardsData={[
             {
-              headline: "Fast Performance",
+              headline: "NGO Partners",
               copyText:
-                "Experience lightning-fast performance with our optimized solutions designed to scale with your business needs.",
+                "Medical NGOs and humanitarian organizations can deploy CIRISMedical in their field operations, extending their reach and impact exponentially.",
               logoSrc: "logoIcon",
               logoAlt: "Brand logo icon",
             },
             {
-              headline: "Secure & Reliable",
+              headline: "Government Health",
               copyText:
-                "Built with security at its core, ensuring your data and applications are protected with enterprise-grade encryption.",
+                "National health ministries can use CIRISMedical to provide basic healthcare in underserved regions, reducing burden on urban hospitals.",
               logoSrc: "logoIcon",
               logoAlt: "Brand logo icon",
             },
             {
-              headline: "Easy Integration",
+              headline: "Medical Volunteers",
               copyText:
-                "Seamlessly integrate with your existing workflow and tools. Get started in minutes, not hours.",
+                "Physicians worldwide can volunteer their expertise, supervising AI decisions and providing guidance to health workers they'll never meet but whose patients they'll save.",
               logoSrc: "logoIcon",
               logoAlt: "Brand logo icon",
             },
@@ -309,13 +309,13 @@ export default function Homepage() {
           opacity={0.8}
           video={true}
           videoSrc="/videos/video1.mp4"
-          buttonHref="mailto:info@ciris.ai"
+          buttonHref="mailto:medical@ciris.ai"
           buttonText="Get in Touch"
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
-          headline="Futureproofing AI."
-          subheadline="ETHICS at the core."
-          copyText="CIRIS is designed to adapt and evolve with the rapidly changing landscape of AI ethics. By embedding ethical principles into the core of AI systems, CIRIS ensures that these systems remain aligned with human values and societal norms, even as they learn and grow."
+          headline="Healthcare is a Human Right."
+          subheadline="Let's make it a reality."
+          copyText="Together, we can ensure that no one dies from preventable diseases simply because of where they were born. CIRISMedical is more than technology - it's a movement to democratize healthcare, honor local wisdom, and save lives. Join us in building a world where quality healthcare reaches every human being."
         />{" "}
         <NewsletterForm />
         <Footer />

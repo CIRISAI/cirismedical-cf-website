@@ -5,8 +5,7 @@ const withMDX = createMDX();
 /** @type {import('next').NextConfig} */
 const config = {
   reactStrictMode: true,
-  output: 'export',
-  trailingSlash: true,
+  output: 'standalone',  // Changed from 'export' to 'standalone' for Docker
   images: {
     unoptimized: true,
   },
