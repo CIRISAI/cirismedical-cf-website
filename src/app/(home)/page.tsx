@@ -82,8 +82,8 @@ export default function Homepage() {
         mediaType="video"
         opacityValue={0.5}
         mediaSrc="/videos/video3.mp4"
-        buttonText="Join Our Mission"
-        buttonHref="#partnership"
+        buttonText="Get Involved"
+        buttonHref="/partnership"
         linkText="Safety First "
         linkHref="/safety"
       />
@@ -309,8 +309,8 @@ export default function Homepage() {
           opacity={0.8}
           video={true}
           videoSrc="/videos/video1.mp4"
-          buttonHref="mailto:medical@ciris.ai"
-          buttonText="Get in Touch"
+          buttonHref="/partnership"
+          buttonText="Get Involved"
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
           headline="Healthcare is a Human Right."
