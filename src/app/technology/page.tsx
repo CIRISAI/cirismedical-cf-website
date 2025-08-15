@@ -66,38 +66,43 @@ export default function TechnologyPage() {
           </section>
 
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">Mixed Modality Support</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Mixed Modality Support 🚧</h2>
             <div className="bg-gradient-to-r from-purple-100 to-blue-100 rounded-2xl p-8">
+              <div className="bg-yellow-50 border-2 border-yellow-200 rounded-lg p-4 mb-6">
+                <p className="text-sm text-yellow-800">
+                  <strong>Status: In Development</strong> - Architecture supports modality extensions through 
+                  wisdom providers. Text processing implemented, other modalities in progress.
+                </p>
+              </div>
               <p className="text-lg mb-6">
-                CIRISMedical processes multiple data types simultaneously, creating a complete picture 
-                of patient health from diverse inputs.
+                Planned support for multiple data types to create complete health picture:
               </p>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="bg-white rounded-lg p-4">
-                  <h4 className="font-bold text-purple-700 mb-2">Text & Voice</h4>
+                  <h4 className="font-bold text-purple-700 mb-2">Text (✅) & Voice (🚧)</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• Patient symptom descriptions</li>
-                    <li>• Voice transcription with accent support</li>
-                    <li>• Multi-language processing</li>
-                    <li>• Medical history intake</li>
+                    <li>✅ Text symptom descriptions</li>
+                    <li>🚧 Voice transcription</li>
+                    <li>🚧 Multi-language processing</li>
+                    <li>✅ Medical history intake</li>
                   </ul>
                 </div>
                 <div className="bg-white rounded-lg p-4">
-                  <h4 className="font-bold text-blue-700 mb-2">Sensor Data</h4>
+                  <h4 className="font-bold text-blue-700 mb-2">Sensor Data 🚧</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• Vital signs monitoring</li>
-                    <li>• IoT medical devices</li>
-                    <li>• Wearable health trackers</li>
-                    <li>• Environmental conditions</li>
+                    <li>🚧 Vital signs monitoring</li>
+                    <li>🚧 IoT medical devices</li>
+                    <li>🚧 Wearable health trackers</li>
+                    <li>🚧 Environmental conditions</li>
                   </ul>
                 </div>
                 <div className="bg-white rounded-lg p-4">
-                  <h4 className="font-bold text-indigo-700 mb-2">Visual Input</h4>
+                  <h4 className="font-bold text-indigo-700 mb-2">Visual Input 🚧</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• Wound assessment photos</li>
-                    <li>• Rash identification</li>
-                    <li>• Swelling evaluation</li>
-                    <li>• Simple diagnostic imaging</li>
+                    <li>🚧 Wound assessment photos</li>
+                    <li>🚧 Rash identification</li>
+                    <li>🚧 Swelling evaluation</li>
+                    <li>🚧 Simple diagnostic imaging</li>
                   </ul>
                 </div>
               </div>
@@ -105,14 +110,17 @@ export default function TechnologyPage() {
           </section>
 
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">Offline-First Architecture</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Offline-First Architecture 🚧</h2>
             <div className="bg-white rounded-2xl shadow-lg p-8">
+              <div className="bg-yellow-50 border-2 border-yellow-200 rounded-lg p-4 mb-6">
+                <p className="text-sm text-yellow-800">
+                  <strong>Status: In Development</strong> - Core architecture supports 4GB RAM constraint, 
+                  offline capabilities being implemented for medical deployment.
+                </p>
+              </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-xl font-bold mb-4 text-green-600">Edge Deployment</h3>
-                  <p className="mb-4">
-                    Designed to work in remote areas with limited or no internet connectivity:
-                  </p>
+                  <h3 className="text-xl font-bold mb-4 text-green-600">Planned Edge Features</h3>
                   <ul className="space-y-2 text-sm">
                     <li>• Local model execution on 4GB RAM</li>
                     <li>• Sync when connection available</li>
@@ -122,10 +130,7 @@ export default function TechnologyPage() {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-4 text-blue-600">Smart Caching</h3>
-                  <p className="mb-4">
-                    Intelligent local storage ensures critical data is always available:
-                  </p>
+                  <h3 className="text-xl font-bold mb-4 text-blue-600">Planned Caching</h3>
                   <ul className="space-y-2 text-sm">
                     <li>• Medical protocols cached locally</li>
                     <li>• Common medication database</li>
@@ -139,38 +144,29 @@ export default function TechnologyPage() {
           </section>
 
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">Privacy & Redaction</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Privacy & Data Protection</h2>
             <div className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-2xl p-8">
-              <h3 className="text-xl font-bold mb-4">Automatic PII Protection</h3>
+              <h3 className="text-xl font-bold mb-4">Data Sanitization</h3>
               <p className="mb-6">
-                All patient data is automatically redacted and protected throughout the system:
+                Log sanitization and adaptive filtering protect sensitive information:
               </p>
-              <div className="grid md:grid-cols-3 gap-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-white rounded-lg p-4">
-                  <h4 className="font-bold text-gray-700 mb-2">Real-time Redaction</h4>
+                  <h4 className="font-bold text-gray-700 mb-2">✅ Implemented</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• Names replaced with IDs</li>
-                    <li>• Locations anonymized</li>
-                    <li>• Dates shifted for privacy</li>
-                    <li>• Contact info removed</li>
+                    <li>• Log sanitization for emails/usernames</li>
+                    <li>• Control character removal</li>
+                    <li>• Adaptive content filtering</li>
+                    <li>• Secrets management system</li>
                   </ul>
                 </div>
                 <div className="bg-white rounded-lg p-4">
-                  <h4 className="font-bold text-gray-700 mb-2">Contextual Preservation</h4>
+                  <h4 className="font-bold text-gray-700 mb-2">🚧 In Development</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• Medical relevance retained</li>
-                    <li>• Age ranges preserved</li>
-                    <li>• Regional patterns maintained</li>
-                    <li>• Temporal relationships kept</li>
-                  </ul>
-                </div>
-                <div className="bg-white rounded-lg p-4">
-                  <h4 className="font-bold text-gray-700 mb-2">Audit-Safe Logging</h4>
-                  <ul className="text-sm space-y-1">
-                    <li>• Redacted logs only</li>
-                    <li>• Tokenized references</li>
-                    <li>• Encrypted at rest</li>
-                    <li>• Access controlled</li>
+                    <li>• Full PII auto-redaction</li>
+                    <li>• Medical record anonymization</li>
+                    <li>• Geographic data masking</li>
+                    <li>• Temporal shifting for dates</li>
                   </ul>
                 </div>
               </div>
@@ -178,37 +174,38 @@ export default function TechnologyPage() {
           </section>
 
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">Comprehensive Audit Trail</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Comprehensive Audit Trail ✅</h2>
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-xl font-bold mb-4 text-orange-600">7-Year Retention</h3>
+                  <h3 className="text-xl font-bold mb-4 text-orange-600">Audit Retention</h3>
                   <p className="mb-4">
-                    Every medical decision is logged and retained per FDA requirements:
+                    Every decision is logged with configurable retention:
                   </p>
                   <ul className="space-y-2 text-sm">
+                    <li>• 90-day default retention (pilot)</li>
                     <li>• Complete decision chain</li>
                     <li>• AI reasoning process</li>
                     <li>• Human interventions</li>
                     <li>• Deferral decisions</li>
-                    <li>• Outcome tracking</li>
                     <li>• Version history</li>
                     <li>• Model used for each decision</li>
+                    <li className="text-orange-600">• 7-year retention planned for FDA compliance</li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-4 text-purple-600">Immutable Records</h3>
+                  <h3 className="text-xl font-bold mb-4 text-purple-600">Immutable Records ✅</h3>
                   <p className="mb-4">
                     Cryptographically signed audit trail ensures accountability:
                   </p>
                   <ul className="space-y-2 text-sm">
-                    <li>• Ed25519 signatures</li>
-                    <li>• Blockchain-ready format</li>
+                    <li>• Ed25519 digital signatures</li>
+                    <li>• Hash chain verification</li>
                     <li>• Tamper-evident storage</li>
-                    <li>• Chain of custody</li>
-                    <li>• Legal compliance</li>
-                    <li>• Export for investigations</li>
-                    <li>• Third-party verification</li>
+                    <li>• Graph-based persistence</li>
+                    <li>• Export capabilities (JSONL, CSV, SQLite)</li>
+                    <li>• Third-party verification support</li>
+                    <li>• Compliance reporting</li>
                   </ul>
                 </div>
               </div>
@@ -216,33 +213,33 @@ export default function TechnologyPage() {
           </section>
 
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">DSAR & Data Rights</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">DSAR & Data Rights ✅</h2>
             <div className="bg-gradient-to-r from-blue-100 to-green-100 rounded-2xl p-8">
-              <h3 className="text-xl font-bold mb-4">Data Subject Access Requests</h3>
+              <h3 className="text-xl font-bold mb-4">Data Subject Access Requests - Implemented</h3>
               <p className="mb-6">
-                Full GDPR and HIPAA compliance with automated data rights management:
+                GDPR-compliant data rights management system with API endpoints:
               </p>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-lg p-6">
-                  <h4 className="font-bold text-blue-700 mb-3">Patient Rights</h4>
+                  <h4 className="font-bold text-blue-700 mb-3">Available Rights ✅</h4>
                   <ul className="space-y-2 text-sm">
-                    <li>• Access all personal data</li>
+                    <li>• Access personal data</li>
                     <li>• Request corrections</li>
-                    <li>• Export medical records</li>
-                    <li>• Delete non-medical data</li>
-                    <li>• Consent management</li>
-                    <li>• Processing restrictions</li>
+                    <li>• Export data</li>
+                    <li>• Delete requests</li>
+                    <li>• 14-day response time (3 for urgent)</li>
+                    <li>• Ticket tracking system</li>
                   </ul>
                 </div>
                 <div className="bg-white rounded-lg p-6">
-                  <h4 className="font-bold text-green-700 mb-3">Automated Processing</h4>
+                  <h4 className="font-bold text-green-700 mb-3">Processing Features</h4>
                   <ul className="space-y-2 text-sm">
-                    <li>• 14-day response time</li>
-                    <li>• Self-service portal</li>
-                    <li>• Ticket tracking system</li>
-                    <li>• Automated redaction</li>
-                    <li>• Secure data delivery</li>
-                    <li>• Audit of access requests</li>
+                    <li>• API endpoint: /v1/dsr</li>
+                    <li>• Unique ticket IDs</li>
+                    <li>• Status tracking</li>
+                    <li>• Email notifications</li>
+                    <li>• Audit logging</li>
+                    <li>• In-memory storage (pilot)</li>
                   </ul>
                 </div>
               </div>
@@ -250,37 +247,32 @@ export default function TechnologyPage() {
           </section>
 
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">Transparency & Accountability</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Transparency & Accountability ✅</h2>
             <div className="bg-white rounded-2xl shadow-lg p-8">
-              <div className="grid md:grid-cols-3 gap-4">
-                <div className="bg-yellow-50 rounded-lg p-4">
-                  <h4 className="font-bold text-yellow-700 mb-2">Public Feed</h4>
-                  <p className="text-sm mb-2">Anonymized statistics available publicly:</p>
-                  <ul className="text-xs space-y-1">
-                    <li>• Total consultations</li>
-                    <li>• Deferral rates</li>
-                    <li>• Response times</li>
-                    <li>• Safety metrics</li>
-                  </ul>
-                </div>
+              <p className="mb-6 text-center">Public transparency feed implemented at /v1/transparency</p>
+              <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-green-50 rounded-lg p-4">
-                  <h4 className="font-bold text-green-700 mb-2">Professional Dashboard</h4>
-                  <p className="text-sm mb-2">Physicians can monitor:</p>
+                  <h4 className="font-bold text-green-700 mb-2">✅ Public Feed (No Auth)</h4>
+                  <p className="text-sm mb-2">Live anonymized statistics:</p>
                   <ul className="text-xs space-y-1">
-                    <li>• Active cases</li>
-                    <li>• Pending deferrals</li>
-                    <li>• Quality metrics</li>
-                    <li>• Pattern analysis</li>
+                    <li>• Total interactions processed</li>
+                    <li>• Action breakdown (SPEAK, DEFER, REJECT)</li>
+                    <li>• Deferral statistics</li>
+                    <li>• Safety metrics</li>
+                    <li>• Response times</li>
+                    <li>• DSAR request counts</li>
                   </ul>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4">
-                  <h4 className="font-bold text-blue-700 mb-2">Regulatory Access</h4>
-                  <p className="text-sm mb-2">Compliance officers can review:</p>
+                  <h4 className="font-bold text-blue-700 mb-2">✅ System Metrics</h4>
+                  <p className="text-sm mb-2">Real-time health monitoring:</p>
                   <ul className="text-xs space-y-1">
-                    <li>• Full audit trails</li>
-                    <li>• Incident reports</li>
-                    <li>• Safety violations</li>
-                    <li>• Compliance status</li>
+                    <li>• Uptime percentage</li>
+                    <li>• Average response time (ms)</li>
+                    <li>• Active agents count</li>
+                    <li>• Rate limit triggers</li>
+                    <li>• Emergency shutdown attempts</li>
+                    <li>• Harmful requests blocked</li>
                   </ul>
                 </div>
               </div>
@@ -289,31 +281,34 @@ export default function TechnologyPage() {
 
 
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">Emergency Response Protocol</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Emergency Response Protocol 🚧</h2>
             <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-4">Immediate Action for Critical Cases</h3>
-              <p className="text-lg mb-6">
-                When seconds count, CIRISMedical activates emergency protocols instantly:
-              </p>
+              <div className="bg-white/10 backdrop-blur rounded-lg p-4 mb-6">
+                <p className="text-sm">
+                  <strong>Status: In Development</strong> - ESI triage framework planned, 
+                  emergency protocols being designed with medical advisory board.
+                </p>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Planned Emergency Features</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                  <h4 className="font-bold mb-3">ESI-1 Response</h4>
+                  <h4 className="font-bold mb-3">ESI Triage (Planned)</h4>
                   <ul className="space-y-2 text-sm">
-                    <li>• Alert ALL available medical personnel</li>
-                    <li>• Activate emergency transport</li>
-                    <li>• Provide step-by-step first aid</li>
-                    <li>• Maintain open communication channel</li>
-                    <li>• GPS location to emergency services</li>
+                    <li>• 5-level severity assessment</li>
+                    <li>• Automatic escalation protocols</li>
+                    <li>• Emergency personnel alerts</li>
+                    <li>• Transport coordination</li>
+                    <li>• Location services integration</li>
                   </ul>
                 </div>
                 <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-                  <h4 className="font-bold mb-3">Stabilization Support</h4>
+                  <h4 className="font-bold mb-3">First Aid Guidance (Planned)</h4>
                   <ul className="space-y-2 text-sm">
-                    <li>• Real-time vital sign monitoring</li>
-                    <li>• CPR guidance with audio cues</li>
-                    <li>• Bleeding control instructions</li>
-                    <li>• Shock prevention protocols</li>
-                    <li>• Airway management guidance</li>
+                    <li>• Step-by-step instructions</li>
+                    <li>• CPR guidance</li>
+                    <li>• Bleeding control</li>
+                    <li>• Stabilization protocols</li>
+                    <li>• Communication maintenance</li>
                   </ul>
                 </div>
               </div>
@@ -321,36 +316,42 @@ export default function TechnologyPage() {
           </section>
 
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">Cultural & Language Support</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Cultural & Language Support 🚧</h2>
             <div className="bg-white rounded-2xl shadow-lg p-8">
+              <div className="bg-yellow-50 border-2 border-yellow-200 rounded-lg p-4 mb-6">
+                <p className="text-sm text-yellow-800">
+                  <strong>Status: In Development</strong> - Working with local communities and medical 
+                  anthropologists to ensure culturally appropriate care.
+                </p>
+              </div>
               <p className="text-lg mb-6">
-                Healthcare that respects and incorporates local knowledge and languages:
+                Planned features for culturally sensitive healthcare:
               </p>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="bg-purple-50 rounded-lg p-4">
-                  <h4 className="font-bold text-purple-700 mb-2">100+ Languages</h4>
+                  <h4 className="font-bold text-purple-700 mb-2">Language Support 🚧</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• Real-time translation</li>
-                    <li>• Local dialect support</li>
-                    <li>• Medical terminology mapping</li>
-                    <li>• Voice and text input</li>
+                    <li>• Multi-language interface</li>
+                    <li>• Local dialect adaptation</li>
+                    <li>• Medical term translation</li>
+                    <li>• Voice input support</li>
                   </ul>
                 </div>
                 <div className="bg-green-50 rounded-lg p-4">
-                  <h4 className="font-bold text-green-700 mb-2">Traditional Medicine</h4>
+                  <h4 className="font-bold text-green-700 mb-2">Cultural Integration 🚧</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• Respect for local practices</li>
-                    <li>• Herb interaction checking</li>
-                    <li>• Cultural sensitivity</li>
-                    <li>• Healer collaboration</li>
+                    <li>• Traditional medicine respect</li>
+                    <li>• Local healer collaboration</li>
+                    <li>• Cultural practice awareness</li>
+                    <li>• Community engagement</li>
                   </ul>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4">
-                  <h4 className="font-bold text-blue-700 mb-2">Religious Considerations</h4>
+                  <h4 className="font-bold text-blue-700 mb-2">Religious Sensitivity 🚧</h4>
                   <ul className="text-sm space-y-1">
-                    <li>• Dietary restrictions</li>
+                    <li>• Dietary considerations</li>
                     <li>• Gender preferences</li>
-                    <li>• Prayer timing respect</li>
+                    <li>• Prayer timing awareness</li>
                     <li>• End-of-life customs</li>
                   </ul>
                 </div>
