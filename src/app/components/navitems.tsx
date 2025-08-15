@@ -31,12 +31,6 @@ const navItems = [
     link: "/partnership",
     icon: <IconUsers className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
-  {
-    name: "Impact",
-    subtitle: "Lives we're changing",
-    link: "/impact",
-    icon: <IconHeart className="h-4 w-4 text-neutral-500 dark:text-white" />,
-  },
 ];
 
 export default navItems;
