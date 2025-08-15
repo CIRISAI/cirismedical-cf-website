@@ -33,307 +33,325 @@ export default function TechnologyPage() {
           </section>
 
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">How CIRISMedical Works</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Wisdom-Based Deferral (WBD)</h2>
             <div className="bg-white rounded-2xl shadow-lg p-8">
-              <div className="prose max-w-none">
-                <p className="text-lg mb-6">
-                  CIRISMedical is a modular extension of CIRISAgent that leverages existing 
-                  domain routing capabilities to provide medical AI services. No core modifications 
-                  were needed - just configuration and modules.
-                </p>
-                
-                <h3 className="text-xl font-bold mb-4">Designed for This</h3>
-                <p className="mb-6">
-                  CIRIS was architected from day one to enable specialized domain extensions like medical AI 
-                  through its foundational capabilities:
-                </p>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex items-start">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Domain-aware LLM routing built into LLMBus by design
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Metadata-based service filtering in ServiceRegistry from the start
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Capability-based WiseAuthority routing as a core feature
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Module loading system with manifest.json as the extension mechanism
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">Core Architecture</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <h3 className="text-xl font-bold mb-4 text-blue-600">CIRIS Framework</h3>
-                <p className="mb-4 text-gray-600">
-                  The Covenant-Integrated Responsible Intelligence System provides the ethical 
-                  AI foundation with:
-                </p>
-                <ul className="space-y-2 text-sm">
-                  <li>• 21 core services with strict type safety</li>
-                  <li>• 6 message buses for scalable routing</li>
-                  <li>• No Dicts, No Strings, No Kings philosophy</li>
-                  <li>• 4GB RAM, offline-capable design</li>
-                  <li>• Zero attack surface architecture</li>
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <h3 className="text-xl font-bold mb-4 text-purple-600">Domain Routing</h3>
-                <p className="mb-4 text-gray-600">
-                  Medical queries are automatically routed to specialized models through:
-                </p>
-                <ul className="space-y-2 text-sm">
-                  <li>• LLMBus with domain parameter support</li>
-                  <li>• Llama-3-70B-Medical via together.ai</li>
-                  <li>• Complete isolation from general AI</li>
-                  <li>• Metadata-driven service selection</li>
-                  <li>• No code changes to routing logic</li>
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <h3 className="text-xl font-bold mb-4 text-green-600">Module System</h3>
-                <p className="mb-4 text-gray-600">
-                  CIRISMedical consists of lightweight modules:
-                </p>
-                <ul className="space-y-2 text-sm">
-                  <li>• medical_enabler - Safety authorization</li>
-                  <li>• medical_llm - Domain-specific LLM</li>
-                  <li>• medical_triage_wa - ESI protocol</li>
-                  <li>• Each module has manifest.json config</li>
-                  <li>• Auto-registration on startup</li>
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <h3 className="text-xl font-bold mb-4 text-orange-600">Wisdom Extension</h3>
-                <p className="mb-4 text-gray-600">
-                  The WiseAuthority system provides multi-source guidance:
-                </p>
-                <ul className="space-y-2 text-sm">
-                  <li>• Capability-based provider routing</li>
-                  <li>• Medical domain prohibition in core</li>
-                  <li>• Wisdom-Based Deferral (WBD)</li>
-                  <li>• Liability disclaimers required</li>
-                  <li>• Professional supervision flags</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">Technical Implementation</h2>
-            <div className="bg-gray-100 rounded-2xl p-8">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-xl font-bold mb-4">Service Architecture</h3>
-                  <div className="bg-white rounded-lg p-4 mb-4 font-mono text-sm">
-                    <pre>{`# Module manifest.json
-{
-  "services": [{
-    "type": "LLM",
-    "metadata": {
-      "domain": "medical",
-      "model": "Llama-3-70B-Medical",
-      "provider": "together.ai"
-    }
-  }]
-}`}</pre>
-                  </div>
-                  <p className="text-sm text-gray-600">
-                    Services register with domain metadata, enabling automatic routing 
-                    without custom code.
-                  </p>
+              <h3 className="text-xl font-bold mb-4 text-red-600">Automatic Escalation to Humans</h3>
+              <p className="text-lg mb-6">
+                CIRISMedical automatically defers uncertain or high-risk decisions to medical professionals. 
+                The AI knows what it doesn't know and actively seeks human guidance.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-red-50 rounded-lg p-4">
+                  <h4 className="font-bold mb-2">Immediate Deferral Triggers</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li>• ESI-1 or ESI-2 triage levels</li>
+                    <li>• Confidence below 80% threshold</li>
+                    <li>• Conflicting medical indicators</li>
+                    <li>• Pediatric or pregnancy cases</li>
+                    <li>• Medication interactions detected</li>
+                  </ul>
                 </div>
-
-                <div>
-                  <h3 className="text-xl font-bold mb-4">Domain Routing</h3>
-                  <div className="bg-white rounded-lg p-4 mb-4 font-mono text-sm">
-                    <pre>{`# Automatic domain routing
-await llm_bus.call_llm_structured(
-    messages=messages,
-    response_model=MedicalResponse,
-    domain="medical"  # Routes to medical LLM
-)`}</pre>
-                  </div>
-                  <p className="text-sm text-gray-600">
-                    The existing LLMBus automatically routes requests with domain="medical" 
-                    to the appropriate specialized model.
-                  </p>
+                <div className="bg-blue-50 rounded-lg p-4">
+                  <h4 className="font-bold mb-2">Deferral Process</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li>• AI flags case for review</li>
+                    <li>• Notifies on-call physician</li>
+                    <li>• Provides full context and reasoning</li>
+                    <li>• Waits for human decision</li>
+                    <li>• Logs entire decision chain</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </section>
 
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">Message Bus Architecture</h2>
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <p className="mb-6">
-                CIRIS uses 6 message buses to enable scalable, multi-provider services:
+            <h2 className="text-3xl font-bold mb-8 text-center">Mixed Modality Support</h2>
+            <div className="bg-gradient-to-r from-purple-100 to-blue-100 rounded-2xl p-8">
+              <p className="text-lg mb-6">
+                CIRISMedical processes multiple data types simultaneously, creating a complete picture 
+                of patient health from diverse inputs.
               </p>
               <div className="grid md:grid-cols-3 gap-4">
-                <div className="bg-blue-50 rounded-lg p-4">
-                  <h4 className="font-bold text-blue-700 mb-2">CommunicationBus</h4>
-                  <p className="text-sm">Multiple adapters (Discord, API, CLI)</p>
+                <div className="bg-white rounded-lg p-4">
+                  <h4 className="font-bold text-purple-700 mb-2">Text & Voice</h4>
+                  <ul className="text-sm space-y-1">
+                    <li>• Patient symptom descriptions</li>
+                    <li>• Voice transcription with accent support</li>
+                    <li>• Multi-language processing</li>
+                    <li>• Medical history intake</li>
+                  </ul>
                 </div>
-                <div className="bg-purple-50 rounded-lg p-4">
-                  <h4 className="font-bold text-purple-700 mb-2">LLMBus</h4>
-                  <p className="text-sm">Multiple providers with domain routing</p>
+                <div className="bg-white rounded-lg p-4">
+                  <h4 className="font-bold text-blue-700 mb-2">Sensor Data</h4>
+                  <ul className="text-sm space-y-1">
+                    <li>• Vital signs monitoring</li>
+                    <li>• IoT medical devices</li>
+                    <li>• Wearable health trackers</li>
+                    <li>• Environmental conditions</li>
+                  </ul>
+                </div>
+                <div className="bg-white rounded-lg p-4">
+                  <h4 className="font-bold text-indigo-700 mb-2">Visual Input</h4>
+                  <ul className="text-sm space-y-1">
+                    <li>• Wound assessment photos</li>
+                    <li>• Rash identification</li>
+                    <li>• Swelling evaluation</li>
+                    <li>• Simple diagnostic imaging</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-center">Offline-First Architecture</h2>
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-green-600">Edge Deployment</h3>
+                  <p className="mb-4">
+                    Designed to work in remote areas with limited or no internet connectivity:
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Local model execution on 4GB RAM</li>
+                    <li>• Sync when connection available</li>
+                    <li>• Battery-aware processing</li>
+                    <li>• Works on basic hardware</li>
+                    <li>• Solar-powered device compatible</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-blue-600">Smart Caching</h3>
+                  <p className="mb-4">
+                    Intelligent local storage ensures critical data is always available:
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Medical protocols cached locally</li>
+                    <li>• Common medication database</li>
+                    <li>• Triage decision trees</li>
+                    <li>• Emergency procedures</li>
+                    <li>• Regional disease patterns</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-center">Privacy & Redaction</h2>
+            <div className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-2xl p-8">
+              <h3 className="text-xl font-bold mb-4">Automatic PII Protection</h3>
+              <p className="mb-6">
+                All patient data is automatically redacted and protected throughout the system:
+              </p>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="bg-white rounded-lg p-4">
+                  <h4 className="font-bold text-gray-700 mb-2">Real-time Redaction</h4>
+                  <ul className="text-sm space-y-1">
+                    <li>• Names replaced with IDs</li>
+                    <li>• Locations anonymized</li>
+                    <li>• Dates shifted for privacy</li>
+                    <li>• Contact info removed</li>
+                  </ul>
+                </div>
+                <div className="bg-white rounded-lg p-4">
+                  <h4 className="font-bold text-gray-700 mb-2">Contextual Preservation</h4>
+                  <ul className="text-sm space-y-1">
+                    <li>• Medical relevance retained</li>
+                    <li>• Age ranges preserved</li>
+                    <li>• Regional patterns maintained</li>
+                    <li>• Temporal relationships kept</li>
+                  </ul>
+                </div>
+                <div className="bg-white rounded-lg p-4">
+                  <h4 className="font-bold text-gray-700 mb-2">Audit-Safe Logging</h4>
+                  <ul className="text-sm space-y-1">
+                    <li>• Redacted logs only</li>
+                    <li>• Tokenized references</li>
+                    <li>• Encrypted at rest</li>
+                    <li>• Access controlled</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-center">Comprehensive Audit Trail</h2>
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-orange-600">7-Year Retention</h3>
+                  <p className="mb-4">
+                    Every medical decision is logged and retained per FDA requirements:
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Complete decision chain</li>
+                    <li>• AI reasoning process</li>
+                    <li>• Human interventions</li>
+                    <li>• Deferral decisions</li>
+                    <li>• Outcome tracking</li>
+                    <li>• Version history</li>
+                    <li>• Model used for each decision</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-4 text-purple-600">Immutable Records</h3>
+                  <p className="mb-4">
+                    Cryptographically signed audit trail ensures accountability:
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Ed25519 signatures</li>
+                    <li>• Blockchain-ready format</li>
+                    <li>• Tamper-evident storage</li>
+                    <li>• Chain of custody</li>
+                    <li>• Legal compliance</li>
+                    <li>• Export for investigations</li>
+                    <li>• Third-party verification</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-center">DSAR & Data Rights</h2>
+            <div className="bg-gradient-to-r from-blue-100 to-green-100 rounded-2xl p-8">
+              <h3 className="text-xl font-bold mb-4">Data Subject Access Requests</h3>
+              <p className="mb-6">
+                Full GDPR and HIPAA compliance with automated data rights management:
+              </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white rounded-lg p-6">
+                  <h4 className="font-bold text-blue-700 mb-3">Patient Rights</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Access all personal data</li>
+                    <li>• Request corrections</li>
+                    <li>• Export medical records</li>
+                    <li>• Delete non-medical data</li>
+                    <li>• Consent management</li>
+                    <li>• Processing restrictions</li>
+                  </ul>
+                </div>
+                <div className="bg-white rounded-lg p-6">
+                  <h4 className="font-bold text-green-700 mb-3">Automated Processing</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li>• 14-day response time</li>
+                    <li>• Self-service portal</li>
+                    <li>• Ticket tracking system</li>
+                    <li>• Automated redaction</li>
+                    <li>• Secure data delivery</li>
+                    <li>• Audit of access requests</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-center">Transparency & Accountability</h2>
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="bg-yellow-50 rounded-lg p-4">
+                  <h4 className="font-bold text-yellow-700 mb-2">Public Feed</h4>
+                  <p className="text-sm mb-2">Anonymized statistics available publicly:</p>
+                  <ul className="text-xs space-y-1">
+                    <li>• Total consultations</li>
+                    <li>• Deferral rates</li>
+                    <li>• Response times</li>
+                    <li>• Safety metrics</li>
+                  </ul>
                 </div>
                 <div className="bg-green-50 rounded-lg p-4">
-                  <h4 className="font-bold text-green-700 mb-2">WiseBus</h4>
-                  <p className="text-sm">Multiple wisdom sources with capabilities</p>
+                  <h4 className="font-bold text-green-700 mb-2">Professional Dashboard</h4>
+                  <p className="text-sm mb-2">Physicians can monitor:</p>
+                  <ul className="text-xs space-y-1">
+                    <li>• Active cases</li>
+                    <li>• Pending deferrals</li>
+                    <li>• Quality metrics</li>
+                    <li>• Pattern analysis</li>
+                  </ul>
                 </div>
-                <div className="bg-orange-50 rounded-lg p-4">
-                  <h4 className="font-bold text-orange-700 mb-2">MemoryBus</h4>
-                  <p className="text-sm">Multiple graph backends (Neo4j, ArangoDB)</p>
+                <div className="bg-blue-50 rounded-lg p-4">
+                  <h4 className="font-bold text-blue-700 mb-2">Regulatory Access</h4>
+                  <p className="text-sm mb-2">Compliance officers can review:</p>
+                  <ul className="text-xs space-y-1">
+                    <li>• Full audit trails</li>
+                    <li>• Incident reports</li>
+                    <li>• Safety violations</li>
+                    <li>• Compliance status</li>
+                  </ul>
                 </div>
-                <div className="bg-red-50 rounded-lg p-4">
-                  <h4 className="font-bold text-red-700 mb-2">ToolBus</h4>
-                  <p className="text-sm">Multiple tool providers from adapters</p>
+              </div>
+            </div>
+          </section>
+
+
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-center">Emergency Response Protocol</h2>
+            <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white rounded-2xl p-8">
+              <h3 className="text-2xl font-bold mb-4">Immediate Action for Critical Cases</h3>
+              <p className="text-lg mb-6">
+                When seconds count, CIRISMedical activates emergency protocols instantly:
+              </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white/10 backdrop-blur rounded-lg p-4">
+                  <h4 className="font-bold mb-3">ESI-1 Response</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Alert ALL available medical personnel</li>
+                    <li>• Activate emergency transport</li>
+                    <li>• Provide step-by-step first aid</li>
+                    <li>• Maintain open communication channel</li>
+                    <li>• GPS location to emergency services</li>
+                  </ul>
                 </div>
-                <div className="bg-indigo-50 rounded-lg p-4">
-                  <h4 className="font-bold text-indigo-700 mb-2">RuntimeControlBus</h4>
-                  <p className="text-sm">Multiple control interfaces</p>
+                <div className="bg-white/10 backdrop-blur rounded-lg p-4">
+                  <h4 className="font-bold mb-3">Stabilization Support</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Real-time vital sign monitoring</li>
+                    <li>• CPR guidance with audio cues</li>
+                    <li>• Bleeding control instructions</li>
+                    <li>• Shock prevention protocols</li>
+                    <li>• Airway management guidance</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </section>
 
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">Type Safety & Quality</h2>
-            <div className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold mb-6">No Dicts, No Strings, No Kings</h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-white rounded-xl p-6">
-                  <h4 className="font-bold mb-3">No Dicts</h4>
-                  <p className="text-sm text-gray-600">
-                    Zero Dict[str, Any] in production code. All data uses Pydantic models 
-                    with full validation and type safety.
-                  </p>
-                </div>
-                <div className="bg-white rounded-xl p-6">
-                  <h4 className="font-bold mb-3">No Strings</h4>
-                  <p className="text-sm text-gray-600">
-                    Use enums and typed constants instead of magic strings. Every value 
-                    has meaning and validation.
-                  </p>
-                </div>
-                <div className="bg-white rounded-xl p-6">
-                  <h4 className="font-bold mb-3">No Kings</h4>
-                  <p className="text-sm text-gray-600">
-                    No special cases or bypass patterns. Every service follows the same 
-                    rules and protocols.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">Deployment Architecture</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Cultural & Language Support</h2>
             <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h3 className="text-xl font-bold mb-4">CIRISManager Configuration</h3>
-              <p className="mb-6">
-                Deployment uses CIRISManager with Tier 5 maximum stewardship:
+              <p className="text-lg mb-6">
+                Healthcare that respects and incorporates local knowledge and languages:
               </p>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold mb-3">Deployment Settings</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li>• Tier 5 maximum human oversight</li>
-                    <li>• Wisdom-Based Deferral (WBD) active</li>
-                    <li>• 7-year audit retention (FDA requirement)</li>
-                    <li>• Automatic rollback on errors</li>
-                    <li>• Canary deployment strategy</li>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="bg-purple-50 rounded-lg p-4">
+                  <h4 className="font-bold text-purple-700 mb-2">100+ Languages</h4>
+                  <ul className="text-sm space-y-1">
+                    <li>• Real-time translation</li>
+                    <li>• Local dialect support</li>
+                    <li>• Medical terminology mapping</li>
+                    <li>• Voice and text input</li>
                   </ul>
                 </div>
-                <div>
-                  <h4 className="font-semibold mb-3">Resource Constraints</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li>• 4GB RAM maximum usage</li>
-                    <li>• Offline-capable operation</li>
-                    <li>• Edge deployment ready</li>
-                    <li>• Low bandwidth optimization</li>
-                    <li>• Battery-aware processing</li>
+                <div className="bg-green-50 rounded-lg p-4">
+                  <h4 className="font-bold text-green-700 mb-2">Traditional Medicine</h4>
+                  <ul className="text-sm space-y-1">
+                    <li>• Respect for local practices</li>
+                    <li>• Herb interaction checking</li>
+                    <li>• Cultural sensitivity</li>
+                    <li>• Healer collaboration</li>
                   </ul>
                 </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">Testing & Validation</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-green-50 rounded-xl p-6">
-                <h3 className="font-bold text-green-700 mb-3">Test Coverage</h3>
-                <p className="text-gray-700 mb-4">
-                  92% test coverage achieved across all medical modules:
-                </p>
-                <ul className="space-y-1 text-sm">
-                  <li>• Unit tests: 45 tests</li>
-                  <li>• Integration tests: 15 tests</li>
-                  <li>• Domain routing validation</li>
-                  <li>• Safety check verification</li>
-                  <li>• Deferral logic testing</li>
-                </ul>
-              </div>
-              <div className="bg-blue-50 rounded-xl p-6">
-                <h3 className="font-bold text-blue-700 mb-3">Continuous Integration</h3>
-                <p className="text-gray-700 mb-4">
-                  Docker-based CI/CD pipeline ensures quality:
-                </p>
-                <ul className="space-y-1 text-sm">
-                  <li>• Automated testing on commit</li>
-                  <li>• Type checking with mypy</li>
-                  <li>• Code formatting with black</li>
-                  <li>• Security scanning</li>
-                  <li>• Performance benchmarking</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">Open Source Foundation</h2>
-            <div className="bg-gradient-to-r from-green-100 to-blue-100 rounded-2xl p-8">
-              <h3 className="text-xl font-bold mb-4">CIRISAgent Core</h3>
-              <p className="mb-6">
-                The non-medical foundation is fully open source under the CIRIS Covenant:
-              </p>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold mb-3">Public Repository</h4>
-                  <p className="text-sm mb-3">
-                    GitHub: CIRISAI/CIRISAgent
-                  </p>
-                  <ul className="space-y-1 text-sm">
-                    <li>• 21 core services</li>
-                    <li>• 1,180+ tests</li>
-                    <li>• Full documentation</li>
-                    <li>• Example implementations</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-3">Live Deployments</h4>
-                  <p className="text-sm mb-3">
-                    Production systems running CIRISAgent:
-                  </p>
-                  <ul className="space-y-1 text-sm">
-                    <li>• agents.ciris.ai - Discord moderation</li>
-                    <li>• API endpoints for integrations</li>
-                    <li>• Public transparency feeds</li>
-                    <li>• Community deployments</li>
+                <div className="bg-blue-50 rounded-lg p-4">
+                  <h4 className="font-bold text-blue-700 mb-2">Religious Considerations</h4>
+                  <ul className="text-sm space-y-1">
+                    <li>• Dietary restrictions</li>
+                    <li>• Gender preferences</li>
+                    <li>• Prayer timing respect</li>
+                    <li>• End-of-life customs</li>
                   </ul>
                 </div>
               </div>
