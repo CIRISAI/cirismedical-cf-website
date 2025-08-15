@@ -222,37 +222,6 @@ export default function PartnershipPage() {
             </div>
           </section>
 
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">Success Stories</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6">
-                <h3 className="text-xl font-bold mb-3">Rural Pakistan Deployment</h3>
-                <p className="text-gray-700 mb-4">
-                  Working with local health workers to provide 24/7 medical triage in villages 
-                  where the nearest doctor is hours away. ESI-5 cases handled locally, 
-                  ESI-1 cases immediately escalated for emergency transport.
-                </p>
-                <div className="text-sm text-gray-600">
-                  <span className="font-semibold">Impact:</span> 10,000+ consultations, 
-                  87% resolved without hospital visit
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6">
-                <h3 className="text-xl font-bold mb-3">Refugee Camp Support</h3>
-                <p className="text-gray-700 mb-4">
-                  Deployed with international NGOs to provide medical screening and triage 
-                  in refugee camps, helping prioritize limited medical resources for those 
-                  who need them most.
-                </p>
-                <div className="text-sm text-gray-600">
-                  <span className="font-semibold">Impact:</span> 50,000+ screenings, 
-                  3x improvement in resource allocation
-                </div>
-              </div>
-            </div>
-          </section>
-
           <div className="mt-16 p-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl text-white text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Make a Difference?</h2>
             <p className="mb-6 text-lg">
