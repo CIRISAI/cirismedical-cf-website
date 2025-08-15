@@ -5,7 +5,7 @@ const withMDX = createMDX();
 /** @type {import('next').NextConfig} */
 const config = {
   reactStrictMode: true,
-  output: 'export',  // Static export for Cloudflare Pages
+  output: 'standalone',  // Standalone output for Docker deployment
   images: {
     unoptimized: true,
   },

@@ -8,7 +8,7 @@ COPY package*.json ./
 
 # Copy source configuration files needed for fumadocs-mdx
 COPY source.config.ts ./
-COPY next.config.mjs ./
+COPY next.config.docker.mjs ./next.config.mjs
 COPY tsconfig.json ./
 COPY .source ./.source
 
@@ -17,6 +17,9 @@ RUN npm ci
 
 # Copy all files
 COPY . .
+
+# Override config for Docker build
+COPY next.config.docker.mjs ./next.config.mjs
 
 # Build the Next.js application
 RUN npm run build
