@@ -42,26 +42,27 @@ export default function TechnologyPage() {
                   were needed - just configuration and modules.
                 </p>
                 
-                <h3 className="text-xl font-bold mb-4">The Discovery</h3>
+                <h3 className="text-xl font-bold mb-4">Designed for This</h3>
                 <p className="mb-6">
-                  During implementation, we discovered that CIRISAgent already had everything needed:
+                  CIRIS was architected from day one to enable specialized domain extensions like medical AI 
+                  through its foundational capabilities:
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Domain-aware LLM routing built into LLMBus
+                    Domain-aware LLM routing built into LLMBus by design
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Metadata-based service filtering in ServiceRegistry
+                    Metadata-based service filtering in ServiceRegistry from the start
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Capability-based WiseAuthority routing in WiseBus
+                    Capability-based WiseAuthority routing as a core feature
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Module loading system with manifest.json configuration
+                    Module loading system with manifest.json as the extension mechanism
                   </li>
                 </ul>
               </div>
