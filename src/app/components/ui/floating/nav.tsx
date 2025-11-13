@@ -7,9 +7,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import Image from "next/image";
-import { GithubLogoIcon } from "@phosphor-icons/react";
-import LogoIcon from "./LogoIcon";
+import { Robot, ShieldCheck, Heart } from "@phosphor-icons/react";
 
 export const FloatingNav = ({
   navItems,
@@ -56,46 +54,71 @@ export const FloatingNav = ({
         }}
         transition={{ type: "spring" }}
         className={cn(
-          "fixed inset-x-0 top-10 z-[5000] mx-auto flex max-w-fit items-center justify-center rounded-lg border-white/[0.1] bg-white/70 py-4 pr-8 pl-12 backdrop-blur-md md:space-x-16 dark:bg-black/50",
+          "fixed inset-x-0 top-10 z-[5000] mx-auto flex flex-col max-w-fit items-center justify-center rounded-full border border-white/[0.2] bg-white/80 py-3 px-6 backdrop-blur-md dark:bg-black/70 shadow-lg",
           className
         )}
       >
-        {" "}
-        <Link
-          href={"/"}
-          className={cn(
-            "relative flex items-center space-x-1 text-neutral-800 hover:text-neutral-500 dark:text-neutral-50 dark:hover:text-neutral-300"
-          )}
-        >
-          {/* LogoIcon SVG extracted to its own component */}
-          <LogoIcon />
-        </Link>
-        {navItems.map((navItem: any, idx: number) => (
-          <Link
-            key={`link=${idx}`}
-            href={navItem.link}
-            className={cn(
-              "hover:text-brand-primary flex-column relative mx-4 block items-center space-x-1 text-sm font-normal text-neutral-700 dark:text-neutral-50 dark:hover:text-neutral-300"
-            )}
-          >
-            {/* <span className="block sm:hidden">{navItem.icon}</span> */}
-            <p className="text-[0.64rem] font-bold sm:block md:text-sm md:font-normal">
+        {/* Top Row: Nav Items */}
+        <div className="hidden md:flex items-center gap-6 mb-3">
+          {navItems.map((navItem: any, idx: number) => (
+            <Link
+              key={`link=${idx}`}
+              href={navItem.link}
+              className={cn(
+                "flex flex-col items-center text-neutral-700 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white transition-colors"
+              )}
+            >
+              <span className="text-sm font-medium">
+                {navItem.name}
+              </span>
+              <span className="text-[10px] uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                {navItem.subtitle}
+              </span>
+            </Link>
+          ))}
+        </div>
+
+        {/* Mobile Nav Items */}
+        <div className="flex md:hidden items-center gap-3 mb-2">
+          {navItems.map((navItem: any, idx: number) => (
+            <Link
+              key={`mobile-link=${idx}`}
+              href={navItem.link}
+              className={cn(
+                "text-xs font-medium text-neutral-700 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
+              )}
+            >
               {navItem.name}
-            </p>
-            <p className="text-xxs hidden font-bold uppercase sm:block">
-              {navItem.subtitle}
-            </p>
+            </Link>
+          ))}
+        </div>
+
+        {/* Bottom Row: Product Buttons - Sage, Scout (centered), Medical */}
+        <div className="flex items-center gap-3">
+          <Link
+            href={"https://sage.ciris.ai"}
+            className="text-neutral-700 border border-neutral-300 hover:border-neutral-400 hover:bg-neutral-50 flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all dark:text-neutral-300 dark:border-neutral-600 dark:hover:border-neutral-500 dark:hover:bg-neutral-800"
+          >
+            <ShieldCheck size={18} />
+            <span className="hidden sm:inline">Sage</span>
           </Link>
-        ))}
-        <Link
-          href={"https://github.com/CIRISAI/CIRISAgent"}
-          className={
-            "text-brand-primary border-brand-primary fill-brand-primary flex items-center space-x-1 rounded-full border-2 px-4 py-1 text-sm hover:fill-black hover:text-black dark:text-neutral-50"
-          }
-        >
-          <GithubLogoIcon fill="current" className="mr-1" size={16} />
-          <span className="text-xxs font-bold">Github</span>
-        </Link>
+
+          <Link
+            href={"https://scout.ciris.ai"}
+            className="bg-[#5865F2] hover:bg-[#4752C4] text-white flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium transition-all hover:shadow-md"
+          >
+            <Robot weight="fill" size={18} />
+            <span className="hidden sm:inline">Scout</span>
+          </Link>
+
+          <Link
+            href={"https://cirismedical.ai"}
+            className="text-neutral-700 border border-neutral-300 hover:border-neutral-400 hover:bg-neutral-50 flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-all dark:text-neutral-300 dark:border-neutral-600 dark:hover:border-neutral-500 dark:hover:bg-neutral-800"
+          >
+            <Heart size={18} />
+            <span className="hidden sm:inline">Medical</span>
+          </Link>
+        </div>
       </motion.div>
     </AnimatePresence>
   );

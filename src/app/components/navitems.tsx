@@ -1,4 +1,4 @@
-import { IconHome, IconShieldCheck, IconLicense, IconHeart, IconStethoscope, IconUsers } from "@tabler/icons-react";
+import { IconHome, IconShieldCheck, IconLicense, IconHeart, IconStethoscope, IconUsers, IconSparkles } from "@tabler/icons-react";
 
 const navItems = [
   {
@@ -30,6 +30,12 @@ const navItems = [
     subtitle: "Join the mission",
     link: "/partnership",
     icon: <IconUsers className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "CIRIS.ai",
+    subtitle: "Ethical AI Framework",
+    link: "https://ciris.ai",
+    icon: <IconSparkles className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
 ];
 
