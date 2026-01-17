@@ -281,6 +281,71 @@ export default function TechnologyPage() {
 
 
           <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-center">EHR & Healthcare Integrations ✅</h2>
+            <div className="bg-gradient-to-r from-teal-100 to-cyan-100 rounded-2xl p-8">
+              <p className="text-lg mb-6 text-center">
+                Production-ready adapters for healthcare system integration, enabling seamless clinical data access under physician supervision.
+              </p>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white rounded-lg p-6 shadow-md">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center mr-4">
+                      <span className="text-white text-xl font-bold">EMR</span>
+                    </div>
+                    <h4 className="font-bold text-teal-700">OpenEMR ✅</h4>
+                  </div>
+                  <ul className="text-sm space-y-2">
+                    <li>• OAuth2 authentication flow</li>
+                    <li>• Patient search & read</li>
+                    <li>• Encounter management</li>
+                    <li>• Appointment queries</li>
+                    <li>• Practitioner lookup</li>
+                    <li>• Interactive config wizard</li>
+                  </ul>
+                </div>
+                <div className="bg-white rounded-lg p-6 shadow-md">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center mr-4">
+                      <span className="text-white text-lg font-bold">FHIR</span>
+                    </div>
+                    <h4 className="font-bold text-cyan-700">FHIR R4 ✅</h4>
+                  </div>
+                  <ul className="text-sm space-y-2">
+                    <li>• SMART on FHIR OAuth2</li>
+                    <li>• Resource search & read</li>
+                    <li>• Patient summaries</li>
+                    <li>• Capability discovery</li>
+                    <li>• Multi-resource support</li>
+                    <li>• Server auto-detection</li>
+                  </ul>
+                </div>
+                <div className="bg-white rounded-lg p-6 shadow-md">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
+                      <span className="text-white text-lg font-bold">HL7</span>
+                    </div>
+                    <h4 className="font-bold text-blue-700">HL7 v2.x ✅</h4>
+                  </div>
+                  <ul className="text-sm space-y-2">
+                    <li>• ADT message parsing</li>
+                    <li>• Message creation</li>
+                    <li>• Structure validation</li>
+                    <li>• Field extraction</li>
+                    <li>• ORM/ORU/MDM support</li>
+                    <li>• Legacy system bridge</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="mt-6 bg-white/50 rounded-lg p-4">
+                <p className="text-sm text-center text-gray-600">
+                  <strong>Iris Medical Support Agent</strong> — Tier 5 stewardship template providing clinical data integration
+                  through these adapters, always under direct physician supervision. Never autonomous clinical decisions.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-16">
             <h2 className="text-3xl font-bold mb-8 text-center">Emergency Response Protocol 🚧</h2>
             <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white rounded-2xl p-8">
               <div className="bg-white/10 backdrop-blur rounded-lg p-4 mb-6">
