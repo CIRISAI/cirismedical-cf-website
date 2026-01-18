@@ -53,7 +53,47 @@ export default function ModelsPage() {
           {/* Model Comparison */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-8 text-center">Viable Medical Models</h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Meditron3 - Recommended */}
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden ring-2 ring-blue-500">
+                <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-6 text-white">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-2xl font-bold">Meditron3-70B</h3>
+                    <span className="bg-white/20 px-3 py-1 rounded-full text-sm">Recommended</span>
+                  </div>
+                  <p className="mt-2 text-blue-100">Llama 3.1 medical fine-tune (EPFL/Yale)</p>
+                </div>
+                <div className="p-6">
+                  <div className="grid grid-cols-2 gap-3 mb-6">
+                    <div className="bg-blue-50 rounded-lg p-3">
+                      <div className="text-sm text-gray-500">Context</div>
+                      <div className="text-xl font-bold text-blue-600">128K tokens</div>
+                    </div>
+                    <div className="bg-blue-50 rounded-lg p-3">
+                      <div className="text-sm text-gray-500">Parameters</div>
+                      <div className="text-xl font-bold text-blue-600">70B</div>
+                    </div>
+                    <div className="bg-blue-50 rounded-lg p-3">
+                      <div className="text-sm text-gray-500">Structured Output</div>
+                      <div className="text-xl font-bold text-blue-600">vLLM</div>
+                    </div>
+                    <div className="bg-blue-50 rounded-lg p-3">
+                      <div className="text-sm text-gray-500">Est. Cost</div>
+                      <div className="text-xl font-bold text-blue-600">~$0.20/M</div>
+                    </div>
+                  </div>
+                  <h4 className="font-bold mb-2">Performance</h4>
+                  <ul className="text-sm space-y-1 mb-4">
+                    <li>Outperforms GPT-4, MedPaLM-2, Meditron 1/2</li>
+                    <li>128K context (full CIRIS compliance)</li>
+                    <li>Humanitarian & low-resource focus</li>
+                    <li>Released March 2025 (latest)</li>
+                  </ul>
+                  <h4 className="font-bold mb-2">Model ID</h4>
+                  <code className="text-xs bg-gray-100 px-2 py-1 rounded">OpenMeditron/Meditron3-70B</code>
+                </div>
+              </div>
+
               {/* OpenBioLLM */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div className="bg-gradient-to-r from-teal-500 to-emerald-500 p-6 text-white">
@@ -61,10 +101,10 @@ export default function ModelsPage() {
                     <h3 className="text-2xl font-bold">OpenBioLLM-70B</h3>
                     <span className="bg-white/20 px-3 py-1 rounded-full text-sm">Open Source</span>
                   </div>
-                  <p className="mt-2 text-teal-100">Llama 3 fine-tuned for biomedical domain</p>
+                  <p className="mt-2 text-teal-100">Llama 3 biomedical fine-tune (Saama)</p>
                 </div>
                 <div className="p-6">
-                  <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="grid grid-cols-2 gap-3 mb-6">
                     <div className="bg-gray-50 rounded-lg p-3">
                       <div className="text-sm text-gray-500">Context</div>
                       <div className="text-xl font-bold text-teal-600">32K tokens</div>
@@ -84,16 +124,12 @@ export default function ModelsPage() {
                   </div>
                   <h4 className="font-bold mb-2">Performance</h4>
                   <ul className="text-sm space-y-1 mb-4">
-                    <li>Outperforms GPT-4, Med-PaLM-2 on biomedical benchmarks</li>
-                    <li>86.06% average score across 9 medical datasets</li>
-                    <li>State-of-the-art for open-source medical LLMs</li>
+                    <li>86% avg across 9 medical datasets</li>
+                    <li>Strong biomedical NER/QA</li>
+                    <li>Available on Azure AI Foundry</li>
                   </ul>
-                  <h4 className="font-bold mb-2">Limitations</h4>
-                  <ul className="text-sm space-y-1 text-gray-600">
-                    <li>32K context (sufficient for 95%+ of requests)</li>
-                    <li>Requires self-hosting or Azure</li>
-                    <li>Tool calling via vLLM (not native)</li>
-                  </ul>
+                  <h4 className="font-bold mb-2">Limitation</h4>
+                  <p className="text-sm text-gray-600">32K context (95% of requests)</p>
                 </div>
               </div>
 
@@ -104,10 +140,10 @@ export default function ModelsPage() {
                     <h3 className="text-2xl font-bold">GPT-5.2 Healthcare</h3>
                     <span className="bg-white/20 px-3 py-1 rounded-full text-sm">Proprietary</span>
                   </div>
-                  <p className="mt-2 text-purple-100">OpenAI's HIPAA-compliant medical API</p>
+                  <p className="mt-2 text-purple-100">OpenAI HIPAA-compliant API</p>
                 </div>
                 <div className="p-6">
-                  <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="grid grid-cols-2 gap-3 mb-6">
                     <div className="bg-gray-50 rounded-lg p-3">
                       <div className="text-sm text-gray-500">Context</div>
                       <div className="text-xl font-bold text-purple-600">128K+ tokens</div>
@@ -127,16 +163,12 @@ export default function ModelsPage() {
                   </div>
                   <h4 className="font-bold mb-2">Performance</h4>
                   <ul className="text-sm space-y-1 mb-4">
-                    <li>Best-in-class on HealthBench</li>
-                    <li>Native JSON Schema & tool calling</li>
-                    <li>Zero-retention endpoints for PHI</li>
+                    <li>Best on HealthBench</li>
+                    <li>Native JSON Schema</li>
+                    <li>Zero-retention PHI endpoints</li>
                   </ul>
-                  <h4 className="font-bold mb-2">Limitations</h4>
-                  <ul className="text-sm space-y-1 text-gray-600">
-                    <li>~75x more expensive than self-hosted</li>
-                    <li>Single vendor dependency</li>
-                    <li>Enterprise agreement required for BAA</li>
-                  </ul>
+                  <h4 className="font-bold mb-2">Limitation</h4>
+                  <p className="text-sm text-gray-600">~75x more expensive</p>
                 </div>
               </div>
             </div>
@@ -168,12 +200,12 @@ export default function ModelsPage() {
                       <td className="py-3 px-4 text-red-600">Context too small (avg request 19K)</td>
                     </tr>
                     <tr className="border-b bg-red-50">
-                      <td className="py-3 px-4 font-medium">Meditron 70B</td>
+                      <td className="py-3 px-4 font-medium">Meditron 1/2 (Llama 2)</td>
                       <td className="text-center py-3 px-4">4K</td>
                       <td className="text-center py-3 px-4 text-red-600">X</td>
                       <td className="text-center py-3 px-4 text-yellow-600">~</td>
                       <td className="text-center py-3 px-4 text-green-600">*</td>
-                      <td className="py-3 px-4 text-red-600">Llama 2 base limits context</td>
+                      <td className="py-3 px-4 text-red-600">Superseded by Meditron3 (Llama 3.1)</td>
                     </tr>
                     <tr className="border-b bg-red-50">
                       <td className="py-3 px-4 font-medium">Google MedLM</td>
@@ -241,11 +273,11 @@ export default function ModelsPage() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-bold mb-3 text-teal-400">vLLM Configuration</h4>
+                  <h4 className="font-bold mb-3 text-teal-400">vLLM Configuration (Meditron3)</h4>
                   <div className="bg-black/30 rounded-lg p-4 font-mono text-sm overflow-x-auto">
-                    <pre>{`vllm serve aaditya/Llama3-OpenBioLLM-70B \\
+                    <pre>{`vllm serve OpenMeditron/Meditron3-70B \\
   --tensor-parallel-size 2 \\
-  --max-model-len 32768 \\
+  --max-model-len 131072 \\
   --gpu-memory-utilization 0.95 \\
   --enable-chunked-prefill \\
   --quantization fp8 \\
@@ -348,51 +380,58 @@ export default function ModelsPage() {
                   <thead>
                     <tr className="border-b">
                       <th className="text-left py-3 px-4">Deployment</th>
+                      <th className="text-center py-3 px-4">Model</th>
                       <th className="text-right py-3 px-4">Per 1M Tokens</th>
-                      <th className="text-right py-3 px-4">Per 1K Requests</th>
                       <th className="text-right py-3 px-4">Monthly (100K req)</th>
                     </tr>
                   </thead>
                   <tbody>
+                    <tr className="border-b bg-blue-50">
+                      <td className="py-3 px-4 font-medium">Self-hosted (2x H100)</td>
+                      <td className="text-center py-3 px-4">Meditron3-70B</td>
+                      <td className="text-right py-3 px-4">~$0.20</td>
+                      <td className="text-right py-3 px-4 text-blue-600 font-bold">~$400 + infra</td>
+                    </tr>
                     <tr className="border-b bg-green-50">
                       <td className="py-3 px-4 font-medium">Self-hosted (2x H100)</td>
+                      <td className="text-center py-3 px-4">OpenBioLLM-70B</td>
                       <td className="text-right py-3 px-4">~$0.20</td>
-                      <td className="text-right py-3 px-4">~$0.004</td>
                       <td className="text-right py-3 px-4 text-green-600 font-bold">~$400 + infra</td>
                     </tr>
                     <tr className="border-b">
                       <td className="py-3 px-4 font-medium">Azure AI Foundry</td>
+                      <td className="text-center py-3 px-4">OpenBioLLM-70B</td>
                       <td className="text-right py-3 px-4">~$1-2</td>
-                      <td className="text-right py-3 px-4">~$0.02</td>
                       <td className="text-right py-3 px-4">~$2,000</td>
                     </tr>
                     <tr className="border-b bg-red-50">
-                      <td className="py-3 px-4 font-medium">OpenAI GPT-5.2 Healthcare</td>
+                      <td className="py-3 px-4 font-medium">OpenAI Healthcare API</td>
+                      <td className="text-center py-3 px-4">GPT-5.2</td>
                       <td className="text-right py-3 px-4">~$15.75</td>
-                      <td className="text-right py-3 px-4">~$0.30</td>
                       <td className="text-right py-3 px-4 text-red-600 font-bold">~$30,000</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <p className="mt-4 text-sm text-gray-500 text-center">
-                Self-hosted infrastructure cost (~$4,500/mo for 2x H100) included in monthly estimate
+                Self-hosted infrastructure cost (~$4,500/mo for 2x H100) included in monthly estimate.
+                Meditron3 recommended for 128K context; OpenBioLLM for 32K fallback.
               </p>
             </div>
           </section>
 
           {/* Recommendation */}
           <section className="mb-16">
-            <div className="bg-gradient-to-r from-teal-600 to-emerald-600 text-white rounded-2xl p-8 text-center">
+            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-2xl p-8 text-center">
               <h2 className="text-3xl font-bold mb-4">Our Recommendation</h2>
               <p className="text-xl mb-6 max-w-3xl mx-auto">
-                For CIRISMedical deployments, we recommend <strong>self-hosted OpenBioLLM-70B</strong> as the primary
-                model with <strong>Azure AI Foundry</strong> as a fallback provider. This provides the best balance of
-                cost, performance, and multi-provider redundancy.
+                For CIRISMedical deployments, we recommend <strong>self-hosted Meditron3-70B</strong> as the primary
+                model with <strong>OpenBioLLM-70B on Azure</strong> as a fallback provider. This provides full 128K
+                context compliance, state-of-the-art medical performance, and multi-provider redundancy at ~$0.20/M tokens.
               </p>
               <div className="flex gap-4 justify-center flex-wrap">
-                <a href="/technology" className="inline-block bg-white text-teal-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-                  View Technology Stack
+                <a href="https://huggingface.co/OpenMeditron/Meditron3-70B" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                  Get Meditron3 on HuggingFace
                 </a>
                 <a href="/partnership" className="inline-block bg-white/20 backdrop-blur text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/30 transition">
                   Partner With Us
