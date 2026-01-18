@@ -420,6 +420,107 @@ export default function ModelsPage() {
             </div>
           </section>
 
+          {/* Deployment Investment */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-center">Deployment Investment</h2>
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <p className="text-center mb-8 text-gray-600">
+                Full CIRISMedical deployment requires infrastructure, integration, and ongoing support investment.
+              </p>
+
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                {/* Hardware */}
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-xl p-6">
+                  <div className="text-3xl font-bold mb-2">$130-190K</div>
+                  <div className="text-gray-300 mb-4">Hardware (Redundant)</div>
+                  <ul className="text-sm space-y-2 text-gray-400">
+                    <li>2x server nodes (failover)</li>
+                    <li>4x H100 80GB SXM total</li>
+                    <li>Networking & storage</li>
+                    <li>UPS & cooling</li>
+                  </ul>
+                  <div className="mt-4 pt-4 border-t border-gray-700">
+                    <div className="text-sm text-gray-400">Non-redundant option</div>
+                    <div className="text-xl font-bold">$65-95K</div>
+                  </div>
+                </div>
+
+                {/* Setup & Integration */}
+                <div className="bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl p-6">
+                  <div className="text-3xl font-bold mb-2">$100-190K</div>
+                  <div className="text-blue-200 mb-4">Setup & Integration</div>
+                  <ul className="text-sm space-y-2 text-blue-100">
+                    <li>EHR integration (OpenEMR, Epic)</li>
+                    <li>HIPAA/compliance audit</li>
+                    <li>Medical workflow customization</li>
+                    <li>Staff training program</li>
+                    <li>First year support included</li>
+                  </ul>
+                </div>
+
+                {/* Sensors & Multimodal */}
+                <div className="bg-gradient-to-br from-teal-500 to-emerald-500 text-white rounded-xl p-6">
+                  <div className="text-3xl font-bold mb-2">$10K</div>
+                  <div className="text-teal-100 mb-4">Sensors & Interfaces</div>
+                  <ul className="text-sm space-y-2 text-teal-50">
+                    <li>Vitals monitoring integration</li>
+                    <li>Medical imaging adapters</li>
+                    <li>Voice interface hardware</li>
+                    <li>Multimodal input devices</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Summary Table */}
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b bg-gray-50">
+                      <th className="text-left py-3 px-4">Deployment Tier</th>
+                      <th className="text-right py-3 px-4">Hardware</th>
+                      <th className="text-right py-3 px-4">Integration</th>
+                      <th className="text-right py-3 px-4">Sensors</th>
+                      <th className="text-right py-3 px-4 font-bold">Total (Year 1)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b">
+                      <td className="py-3 px-4 font-medium">Minimum (Non-redundant)</td>
+                      <td className="text-right py-3 px-4">$65K</td>
+                      <td className="text-right py-3 px-4">$100K</td>
+                      <td className="text-right py-3 px-4">$10K</td>
+                      <td className="text-right py-3 px-4 font-bold">~$175K</td>
+                    </tr>
+                    <tr className="border-b bg-blue-50">
+                      <td className="py-3 px-4 font-medium">Recommended (Redundant)</td>
+                      <td className="text-right py-3 px-4">$130K</td>
+                      <td className="text-right py-3 px-4">$150K</td>
+                      <td className="text-right py-3 px-4">$10K</td>
+                      <td className="text-right py-3 px-4 font-bold text-blue-600">~$290K</td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="py-3 px-4 font-medium">Enterprise (Full HA)</td>
+                      <td className="text-right py-3 px-4">$190K</td>
+                      <td className="text-right py-3 px-4">$190K</td>
+                      <td className="text-right py-3 px-4">$10K</td>
+                      <td className="text-right py-3 px-4 font-bold">~$390K</td>
+                    </tr>
+                    <tr className="bg-gray-50">
+                      <td className="py-3 px-4 font-medium">Cloud-Based Alternative</td>
+                      <td className="text-right py-3 px-4">$0 (opex)</td>
+                      <td className="text-right py-3 px-4">$100K</td>
+                      <td className="text-right py-3 px-4">$10K</td>
+                      <td className="text-right py-3 px-4 font-bold">~$110K + $50-70K/yr</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-4 text-sm text-gray-500 text-center">
+                Annual support after year 1: $25-50K depending on tier. Cloud option includes ~$50-70K/year GPU compute costs.
+              </p>
+            </div>
+          </section>
+
           {/* Recommendation */}
           <section className="mb-16">
             <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-2xl p-8 text-center">
