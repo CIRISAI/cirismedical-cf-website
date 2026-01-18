@@ -76,16 +76,16 @@ export default function Homepage() {
     <>
       <FloatingNav navItems={navItems} />
       <HomeHeader
-        headline="Healthcare for Humanity."
-        subheadline="Bringing physician-supervised AI healthcare to 3.5 billion underserved people"
-        description="Every 4 seconds, someone dies from lack of basic healthcare. CIRISMedical bridges this gap with ethical AI, working alongside local healers and global physicians to deliver care where it's needed most."
+        headline="Open Source Medical AI."
+        subheadline="100% private. Integration-ready for certified healthcare providers."
+        description="CIRISMedical is ethical AI infrastructure for hospitals, governments, and NGOs. Your data never leaves your servers. No vendor lock-in. Full audit transparency. Ready to integrate with your EHR systems today."
         mediaType="video"
         opacityValue={0.5}
         mediaSrc="/videos/video3.mp4"
-        buttonText="Get Involved"
-        buttonHref="/partnership"
-        linkText="Safety First "
-        linkHref="/safety"
+        buttonText="Contact Us"
+        buttonHref="mailto:info@ciris.ai"
+        linkText="View Models"
+        linkHref="/models"
       />
       <div className="container min-h-screen max-w-7xl" ref={containerRef}>
         <Cursor
@@ -116,9 +116,9 @@ export default function Homepage() {
           // buttonText="About CIRIS"
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
-          headline="The Silent Crisis"
-          subheadline="Half the world lacks access to essential health services."
-          copyText="In rural Pakistan, a mother walks 20 kilometers to the nearest clinic. In sub-Saharan Africa, a child dies from malaria every minute. In refugee camps, millions suffer without basic care. CIRISMedical exists because healthcare is a human right, not a privilege of geography or wealth."
+          headline="Built for Integration"
+          subheadline="Drop-in AI for certified healthcare providers."
+          copyText="CIRISMedical connects directly to OpenEMR, Epic, Cerner, and HL7/FHIR systems. Deploy on your infrastructure with full data sovereignty. Hospital networks, state health departments, and humanitarian organizations can extend physician reach without compromising patient privacy or regulatory compliance."
         />
         <SeparatorTitleBlock
           logoSrc="logoIcon"
@@ -309,13 +309,13 @@ export default function Homepage() {
           opacity={0.8}
           video={true}
           videoSrc="/videos/video1.mp4"
-          buttonHref="/partnership"
-          buttonText="Get Involved"
+          buttonHref="mailto:info@ciris.ai"
+          buttonText="Email info@ciris.ai"
           logoSrc="logoIcon"
           logoAlt="Brand logo icon"
-          headline="Healthcare is a Human Right."
-          subheadline="Let's make it a reality."
-          copyText="Together, we can ensure that no one dies from preventable diseases simply because of where they were born. CIRISMedical is more than technology - it's a movement to democratize healthcare, honor local wisdom, and save lives. Join us in building a world where quality healthcare reaches every human being."
+          headline="Ready to Deploy."
+          subheadline="Open source. Private. Yours."
+          copyText="CIRISMedical is 100% open source medical AI infrastructure. Deploy on your servers, integrate with your EHR, maintain complete data sovereignty. Whether you're a hospital network, government health agency, or humanitarian NGO - we're ready to help you bring AI-assisted healthcare to your patients."
         />{" "}
         <NewsletterForm />
         <Footer />
