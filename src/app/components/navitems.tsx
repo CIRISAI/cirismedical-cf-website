@@ -1,4 +1,4 @@
-import { IconHome, IconShieldCheck, IconLicense, IconHeart, IconStethoscope, IconUsers, IconSparkles } from "@tabler/icons-react";
+import { IconHome, IconShieldCheck, IconLicense, IconHeart, IconStethoscope, IconUsers, IconSparkles, IconCpu } from "@tabler/icons-react";
 
 const navItems = [
   {
@@ -24,6 +24,12 @@ const navItems = [
     subtitle: "Domain-routed medical AI",
     link: "/technology",
     icon: <IconStethoscope className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "Models",
+    subtitle: "Medical LLM options",
+    link: "/models",
+    icon: <IconCpu className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
   {
     name: "Partnership",
