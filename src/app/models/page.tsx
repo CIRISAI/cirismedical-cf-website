@@ -13,10 +13,96 @@ export default function ModelsPage() {
             <h1 className="mb-4 text-5xl font-bold text-gray-900">
               Medical LLM Options
             </h1>
-            <p className="text-xl text-gray-600">
-              Two viable paths for CIRIS-compliant medical AI deployment
+            <p className="text-xl text-gray-600 mb-6">
+              100% open source. Your data never leaves your infrastructure.
             </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">
+                Open Source Models
+              </span>
+              <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">
+                Air-Gapped Capable
+              </span>
+              <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">
+                Zero Data Exfiltration
+              </span>
+              <span className="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                HIPAA/GDPR Ready
+              </span>
+            </div>
           </div>
+
+          {/* Data Sovereignty */}
+          <section className="mb-16">
+            <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-2xl p-8">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h2 className="text-3xl font-bold mb-4">Your Data. Your Infrastructure. Full Stop.</h2>
+                  <p className="text-lg mb-6 text-green-100">
+                    CIRISMedical runs entirely on your hardware. Patient data never leaves your facility,
+                    never touches external APIs, and never trains third-party models. This isn't a promise—it's
+                    architecture.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-center">
+                      <span className="bg-white/20 rounded-full p-1 mr-3">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </span>
+                      100% open source model weights (Apache 2.0 / Llama license)
+                    </li>
+                    <li className="flex items-center">
+                      <span className="bg-white/20 rounded-full p-1 mr-3">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </span>
+                      No external API calls—runs fully offline
+                    </li>
+                    <li className="flex items-center">
+                      <span className="bg-white/20 rounded-full p-1 mr-3">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </span>
+                      Audit every inference—full transparency
+                    </li>
+                    <li className="flex items-center">
+                      <span className="bg-white/20 rounded-full p-1 mr-3">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </span>
+                      No vendor lock-in—you own everything
+                    </li>
+                  </ul>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                    <div className="text-4xl mb-2">🏥</div>
+                    <div className="font-bold">Hospital Networks</div>
+                    <div className="text-sm text-green-200">Multi-facility deployment</div>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                    <div className="text-4xl mb-2">🏛️</div>
+                    <div className="font-bold">Government Health</div>
+                    <div className="text-sm text-green-200">State & local agencies</div>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                    <div className="text-4xl mb-2">🌍</div>
+                    <div className="font-bold">NGOs & Humanitarian</div>
+                    <div className="text-sm text-green-200">Remote & underserved areas</div>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+                    <div className="text-4xl mb-2">🔒</div>
+                    <div className="font-bold">Private Practice</div>
+                    <div className="text-sm text-green-200">Clinics & specialists</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
           {/* Requirements Overview */}
           <section className="mb-16">
