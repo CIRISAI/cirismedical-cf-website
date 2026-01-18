@@ -1,5 +1,5 @@
 {
-  "name": "cirismedical-website",
+  "name": "cirismedical-cf-website",
   "compatibility_date": "2024-07-22",
   "compatibility_flags": ["nodejs_compat"],
   "assets": {
