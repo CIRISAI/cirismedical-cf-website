@@ -84,8 +84,8 @@ export default function Homepage() {
         mediaSrc="/videos/video3.mp4"
         buttonText="Contact Us"
         buttonHref="mailto:info@ciris.ai"
-        linkText="View Models"
-        linkHref="/models"
+        linkText="Ask a CIRIS Agent"
+        linkHref="https://scout.ciris.ai"
       />
       <div className="container min-h-screen max-w-7xl" ref={containerRef}>
         <Cursor

@@ -94,7 +94,7 @@ export default function NewsletterForm() {
                 Or subscribe for updates on open source medical AI.
               </p>
 
-              <div className="mx-auto mt-8 flex justify-center">
+              <div className="mx-auto mt-8 flex flex-wrap justify-center gap-4">
                 <a
                   href="mailto:info@ciris.ai"
                   className="inline-flex items-center gap-3 bg-brand-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:opacity-90 transition"
@@ -103,6 +103,17 @@ export default function NewsletterForm() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   Email info@ciris.ai
+                </a>
+                <a
+                  href="https://scout.ciris.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-white/10 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition border border-white/20"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
+                  Ask a CIRIS Agent
                 </a>
               </div>
 
